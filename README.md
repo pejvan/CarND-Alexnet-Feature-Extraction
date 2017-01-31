@@ -11,3 +11,15 @@ Before you start the lab, you should first install:
 * SciPy
 * matplotlib
 
+## Tips:
+Splitting the large archive into smaller ones so we can store them on GitHub directly:
+```
+$ split -b 100m bvlc-alexnet.npy.bz2
+```
+
+Concatenating them again:
+```
+cat x* > bvlc-alexnet.npy.bz2
+```
+
+
